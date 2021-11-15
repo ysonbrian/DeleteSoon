@@ -3,7 +3,7 @@ module.exports = {
     title: 'yd-blog',
     description: 'Code & Blog',
     author: 'ysonbrian',
-    siteUrl: 'https://ysonbrian.github.io/',
+    siteUrl: 'https://ysonbrian.github.io',
   },
   plugins: [
     {
@@ -83,7 +83,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://ysonbrian.github.io/',
+        siteUrl: 'https://ysonbrian.github.io',
         stripQueryString: true,
       },
     },

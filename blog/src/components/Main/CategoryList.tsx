@@ -1,7 +1,7 @@
 import React, { FunctionComponent, ReactNode } from 'react'
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
-
+import { FaBeer } from '@react-icons/all-files/fa/FaBeer'
 export type CategoryListProps = {
   selectedCategory: string
   categoryList: {
@@ -75,7 +75,14 @@ const CategoryList: FunctionComponent<CategoryListProps> = function ({
           active={name === selectedCategory}
           key={name}
         >
-          #{name}({count})
+          {name === 'Web'
+            ? '💻'
+            : name === 'BlockChain'
+            ? '🔐'
+            : name === 'Etc'
+            ? '📚'
+            : '😎'}
+          {` ${name}`}({count})
         </CategoryItem>
       ))}
     </CategoryListWrapper>
